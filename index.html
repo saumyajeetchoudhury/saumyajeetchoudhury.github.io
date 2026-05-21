@@ -1544,15 +1544,19 @@ if (window.matchMedia('(pointer: fine)').matches) {
 
   let isHovering = false;
   document.querySelectorAll('a, button, .chip, .achievement-card, .quest-card').forEach(el => {
-    el.addEventListener('mouseenter', () => {
+     el.addEventListener('mouseenter', () => {
       isHovering = true;
       cursor.style.transform = `translate(${mx}px, ${my}px) scale(1.8)`;
+      cursor.style.background = '#000000';
+      cursorRing.style.borderColor = '#000000';
       cursorRing.style.width = '48px';
       cursorRing.style.height = '48px';
     });
     el.addEventListener('mouseleave', () => {
       isHovering = false;
       cursor.style.transform = `translate(${mx}px, ${my}px) scale(1)`;
+      cursor.style.background = 'var(--red)';
+      cursorRing.style.borderColor = 'var(--red)';
       cursorRing.style.width = '32px';
       cursorRing.style.height = '32px';
     });
