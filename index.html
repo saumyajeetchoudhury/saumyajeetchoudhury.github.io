@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SAUMYAJEET CHOUDHURY // Portfolio</title>
+<meta name="description" content="Saumyajeet Choudhury — M.Sc. Applied Microbiology student at KIIT, focused on antimicrobial resistance and food safety research.">
+<meta property="og:title" content="Saumyajeet Choudhury // Portfolio">
+<meta property="og:description" content="M.Sc. Applied Microbiology student · Antimicrobial resistance & food safety research.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧫</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -210,255 +215,48 @@
   .stat-sheet { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid rgba(255,255,255,0.08); clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px)); background: rgba(10,10,10,0.6); backdrop-filter: blur(5px); }
   .stat-bio { padding: 2.5rem; border-right: 1px solid rgba(255,255,255,0.08); }
   .stat-bio p { font-size: 1.05rem; font-weight: 400; color: var(--off-white); line-height: 1.8; }
-  .stat-grid { padding: 2.5rem; display: flex; flex-direction: column; gap: 1.2rem; }
-  .stat-row { display: flex; align-items: center; gap: 1rem; }
-  .stat-name { font-family: var(--font-mono); font-size: 0.7rem; color: var(--red); letter-spacing: 2px; width: 100px; flex-shrink: 0; text-transform: uppercase; }
-  .stat-bar-wrap { flex: 1; height: 6px; background: rgba(255,255,255,0.06); clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%); overflow: hidden; }
-  .stat-bar { height: 100%; background: var(--red); width: 0%; transition: width 1.5s cubic-bezier(0.4,0,0.2,1); }
-  .stat-val { font-family: var(--font-head); font-size: 1rem; color: var(--white); width: 36px; text-align: right; flex-shrink: 0; }
+  <comment-tag id="1"><div class="skill-chips" style="margin-top:1.2rem;">
+          <span class="chip" style="border-color:var(--red); color:var(--red);">// SEEKING: DISSERTATION PLACEMENT</span>
+          <span class="chip">Antimicrobial Resistance</span><span class="chip">Food Safety</span><span class="chip">Clinical Microbiology</span>
+        </div></comment-tag id="1" text="Elevate this from simple chips into a prominent 'Current Work' or 'Active Objective' block to make your soft ask stand out. You could format this as a highlighted callout box.
 
-  .timeline { position: relative; padding-left: 2.5rem; }
-  .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--red), transparent); }
-  .timeline-item { position: relative; padding: 2rem 0 2rem 2rem; opacity: 0; transform: translateX(-20px); transition: all 0.6s cubic-bezier(0.4,0,0.2,1); }
-  .timeline-item.revealed { opacity: 1; transform: translateX(0); }
-  .timeline-item:not(:last-child) { border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
-  .timeline-dot { position: absolute; left: -2.7rem; top: 2.2rem; width: 12px; height: 12px; background: var(--red); clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
-  .timeline-period { font-family: var(--font-mono); font-size: 0.7rem; color: var(--red); letter-spacing: 3px; margin-bottom: 0.4rem; }
-  .timeline-title { font-family: var(--font-head); font-size: clamp(1.5rem, 4vw, 2rem); color: var(--white); letter-spacing: 2px; line-height: 1; margin-bottom: 0.3rem; }
-  .timeline-sub { font-family: var(--font-body); font-size: 0.9rem; color: var(--grey); letter-spacing: 1px; margin-bottom: 0.8rem; }
-  .timeline-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .tag { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 1px; padding: 0.2rem 0.6rem; background: rgba(232,0,28,0.1); border: 1px solid rgba(232,0,28,0.3); color: var(--red); clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%); }
-
-  #certifications { background: #0d0d0d; }
-  .achievement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
-  .achievement-card { background: rgba(17,17,17,0.8); backdrop-filter: blur(4px); border: 1px solid var(--border); clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px)); padding: 2rem; position: relative; opacity: 0; transform: translateY(30px); transition: all 0.5s cubic-bezier(0.4,0,0.2,1); cursor: default; }
-  .achievement-card.revealed { opacity: 1; transform: translateY(0); }
-  .achievement-card::before { content: ''; position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 16px solid var(--red); border-left: 16px solid transparent; }
-  .achievement-card:hover { border-color: var(--red); box-shadow: 0 0 0 1px var(--red), 0 0 20px var(--red-glow); transform: translate(-3px, -3px); }
-  .ach-icon { font-family: var(--font-head); font-size: 2.5rem; color: var(--red); margin-bottom: 0.5rem; }
-  .ach-title { font-family: var(--font-head); font-size: 1.2rem; letter-spacing: 2px; color: var(--white); margin-bottom: 0.3rem; line-height: 1.2; }
-  .ach-issuer { font-family: var(--font-mono); font-size: 0.65rem; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.8rem; }
-  .ach-date { font-family: var(--font-mono); font-size: 0.65rem; color: var(--grey); letter-spacing: 2px; }
-
-  #skills { background: var(--black); }
-  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; position: relative; z-index: 2; }
-  .skills-block { opacity: 0; transform: translateX(-20px); transition: all 0.6s cubic-bezier(0.4,0,0.2,1); }
-  .skills-block.revealed { opacity: 1; transform: translateX(0); }
-  .skills-block-title { font-family: var(--font-head); font-size: 1.4rem; letter-spacing: 3px; color: var(--red); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.8rem; }
-  .skills-block-title::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
-  .skill-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .chip { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; padding: 0.35rem 0.8rem; border: 1px solid rgba(255,255,255,0.15); color: var(--off-white); clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%); transition: all 0.15s; cursor: default; background: rgba(0,0,0,0.4); }
-  .chip:hover { background: var(--red); border-color: var(--red); color: var(--white); transform: translate(-2px, -2px); box-shadow: 3px 3px 0 rgba(255,255,255,0.2); }
-
-  #internships { background: #0d0d0d; }
-  .dossier-card { background: rgba(17,17,17,0.75); backdrop-filter: blur(8px); border: 1px solid var(--border); border-top: 4px solid var(--red); padding: 3rem; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5); opacity: 0; transform: translateY(30px); transition: all 0.6s cubic-bezier(0.4,0,0.2,1); }
-  .dossier-card.revealed { opacity: 1; transform: translateY(0); }
-  .dossier-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem; margin-bottom: 1.5rem; gap: 1rem; }
-  .dossier-title-group { display: flex; flex-direction: column; gap: 0.3rem; }
-  .dossier-role { font-family: var(--font-head); font-size: 2.5rem; color: var(--red); letter-spacing: 2px; line-height: 1; margin: 0; }
-  .dossier-org { font-family: var(--font-body); font-size: 1.2rem; font-weight: 600; color: var(--white); letter-spacing: 1px; }
-  .dossier-period { font-family: var(--font-mono); font-size: 0.85rem; color: var(--red); letter-spacing: 3px; padding: 0.4rem 1rem; background: rgba(232,0,28,0.08); border: 1px solid rgba(232,0,28,0.3); clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); display: inline-block; text-transform: uppercase; }
-  .dossier-bullets { list-style: none; display: flex; flex-direction: column; gap: 1.2rem; margin: 0; padding: 0; }
-  .dossier-bullets li { position: relative; padding-left: 2rem; font-size: 1rem; color: var(--off-white); line-height: 1.6; }
-  .dossier-bullets li::before { content: '>>'; position: absolute; left: 0; top: 2px; color: var(--red); font-family: var(--font-mono); font-size: 0.9rem; font-weight: bold; letter-spacing: -1px; }
-
-  #experience { background: var(--black); }
-  .quest-list { display: flex; flex-direction: column; gap: 1.5rem; position: relative; z-index: 2;}
-  .quest-card { background: rgba(17,17,17,0.7); backdrop-filter: blur(4px); border: 1px solid var(--border); border-left: 3px solid var(--red); padding: 2rem; clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%); position: relative; opacity: 0; transform: translateX(-30px); transition: all 0.6s cubic-bezier(0.4,0,0.2,1); }
-  .quest-card.revealed { opacity: 1; transform: translateX(0); }
-  .quest-card:hover { border-color: var(--red); box-shadow: inset 0 0 30px rgba(232,0,28,0.05), -4px 4px 0 var(--red); transform: translateX(4px); }
-  .quest-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem; }
-  .quest-role { font-family: var(--font-head); font-size: 1.6rem; letter-spacing: 2px; color: var(--white); }
-  .quest-period { font-family: var(--font-mono); font-size: 0.7rem; color: var(--red); letter-spacing: 3px; padding: 0.3rem 0.8rem; border: 1px solid rgba(232,0,28,0.4); clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%); }
-  .quest-org { font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--grey); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
-  .quest-desc { font-size: 0.95rem; color: var(--off-white); line-height: 1.7; }
-
-  #contact { background: #0d0d0d; }
-  .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; position: relative; z-index: 2;}
-  .calling-card { background: var(--red); padding: 3rem 2.5rem; clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); position: relative; overflow: hidden; }
-  .calling-card::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(0,0,0,0.1) 20px, rgba(0,0,0,0.1) 21px); }
-  .calling-card-inner { position: relative; z-index: 1; }
-  .calling-label { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 4px; color: rgba(255,255,255,0.7); text-transform: uppercase; margin-bottom: 1rem; }
-  .calling-title { font-family: var(--font-head); font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: 4px; color: var(--white); line-height: 1; margin-bottom: 1.5rem; }
-  .calling-info { display: flex; flex-direction: column; gap: 1rem; }
-  .calling-item { display: flex; align-items: center; gap: 1rem; color: rgba(255,255,255,0.9); font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
-  .calling-item:hover { color: var(--black); }
-  .calling-item-icon { width: 32px; height: 32px; background: rgba(0,0,0,0.3); clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
-  
-  .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
-  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
-  .form-group label { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 3px; color: var(--red); text-transform: uppercase; }
-  .form-group input, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--white); font-family: var(--font-body); font-size: 0.95rem; padding: 0.8rem 1rem; clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%); outline: none; transition: border-color 0.2s, box-shadow 0.2s; width: 100%; backdrop-filter: blur(4px); }
-  .form-group input:focus, .form-group textarea:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(232,0,28,0.15); background: rgba(232,0,28,0.04); }
-  .form-group textarea { resize: vertical; min-height: 120px; }
-  
-  .form-submit { align-self: flex-start; background: var(--red); color: var(--white); font-family: var(--font-head); font-size: 1rem; letter-spacing: 3px; padding: 0.9rem 2rem; border: none; clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%); transition: transform 0.15s, box-shadow 0.15s; position: relative; overflow: hidden; cursor: pointer; }
-  .form-submit::before, .form-submit::after { content: 'SEND CARD'; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--white); color: var(--red); opacity: 0; }
-  .form-submit:hover::before { opacity: 1; left: 2px; text-shadow: -1px 0 #000; animation: glitch-anim 0.3s infinite linear alternate-reverse; }
-  .form-submit:hover::after { opacity: 1; left: -2px; text-shadow: -1px 0 #00ffff; animation: glitch-anim-2 0.4s infinite linear alternate-reverse; }
-  .form-submit:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 rgba(255,255,255,0.3); }
-
-  footer { position: relative; z-index: 1; background: var(--black); border-top: 1px solid var(--border); padding: 2rem; text-align: center; }
-  .footer-inner { font-family: var(--font-mono); font-size: 0.65rem; color: var(--grey); letter-spacing: 3px; text-transform: uppercase; }
-  .footer-inner span { color: var(--red); }
-  .flash-overlay { position: fixed; inset: 0; background: var(--white); pointer-events: none; z-index: 5000; opacity: 0; }
-  .reveal-fade { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.4,0,0.2,1); }
-  .reveal-fade.revealed { opacity: 1; transform: translateY(0); }
-
-  @media (max-width: 768px) {
-    body { cursor: auto; }
-    .cursor, .cursor-ring { display: none; }
-    .hud-tracker { display: none; }
-    nav { padding: 0 1rem; }
-    .nav-links { display: none; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: rgba(10,10,10,0.98); border-bottom: 1px solid var(--border); }
-    .nav-links.open { display: flex; }
-    .nav-links a { height: 48px; line-height: 48px; padding: 0 1.5rem; }
-    .nav-toggle { display: flex; }
-    .stat-sheet { grid-template-columns: 1fr; }
-    .stat-bio { border-right: none; border-bottom: 1px solid var(--border); }
-    .skills-grid, .contact-wrapper { grid-template-columns: 1fr; }
-    .hero-bg-stripe { display: none; }
-    .hero-name { font-size: clamp(3.5rem, 15vw, 6rem); }
-    .timeline { padding-left: 1.5rem; }
-    .timeline-dot { left: -2rem; }
-    .watermark-bg { font-size: clamp(6rem, 20vw, 12rem); }
-    .dossier-card { padding: 2rem 1.5rem; }
-  }
-  @media (max-width: 480px) {
-    section { padding: 4rem 0 2.5rem; }
-    .achievement-grid, .locked-grid { grid-template-columns: 1fr; }
-  }
-</style>
-</head>
-<body>
-
-<!-- GLOBAL CRT SCANLINE OVERLAY -->
-<div class="crt-scanline"></div>
-
-<!-- LIVE HUD TRACKER -->
-<div class="hud-tracker">
-  <div>SYS.OP // <span class="hud-val" style="color:rgba(0,200,100,0.9);">ONLINE</span></div>
-  <div>LOC // <span class="hud-val">20.296, 85.824</span></div>
-  <div>MEM // <span class="hud-val" id="hud-mem">0x0000</span></div>
-  <div>UPTIME // <span class="hud-val" id="hud-time">00:00:00</span></div>
-</div>
-
-<!-- GAME LOADING SCREEN OVERLAY -->
-<div id="game-loader">
-  <div class="loader-scanline"></div>
-  <div class="loader-watermark">SYS.BOOT_SEQ</div>
-  <div class="loader-data-wall left" id="loader-data-left"></div>
-  <div class="loader-data-wall right" id="loader-data-right"></div>
-
-  <div class="loader-corners"></div>
-  <div class="loader-terminal" id="loader-terminal"></div>
-  
-  <svg class="loader-svg-ring" viewBox="0 0 180 180">
-    <circle id="loader-circle-fill" cx="90" cy="90" r="86"></circle>
-  </svg>
-
-  <div class="loader-reticle">
-    <div class="loader-reticle-inner"></div>
-    <div class="loader-reticle-core"></div>
-  </div>
-  
-  <div class="loader-bottom-ui">
-    <div class="loading-bar-container">
-      <div class="loading-bar-fill" id="loader-bar-fill"></div>
-    </div>
-    <div class="loading-text-row">
-      <span class="glitch-text-load">LOADING BIO-OP ASSETS...</span>
-      <span class="loading-percentage" id="loader-pct">0%</span>
-    </div>
-    <div class="game-hint">
-      <span>HINT:</span> <span style="color:inherit; font-family:inherit; text-transform:none; letter-spacing:0;" id="loader-hint-text">Loading...</span>
-    </div>
-  </div>
-</div>
-
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="flash-overlay" id="flashOverlay"></div>
-
-<nav>
-  <div class="nav-logo">SC<span>.</span></div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#about" data-text="ABOUT">ABOUT</a></li>
-    <li><a href="#education" data-text="EDUCATION">EDUCATION</a></li>
-    <li><a href="#certifications" data-text="CERTS">CERTS</a></li>
-    <li><a href="#skills" data-text="SKILLS">SKILLS</a></li>
-    <li><a href="#internships" data-text="INTERNSHIP">INTERNSHIP</a></li>
-    <li><a href="#experience" data-text="EXPERIENCE">EXPERIENCE</a></li>
-    <li><a href="#contact" data-text="CONTACT">CONTACT</a></li>
-  </ul>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
-
-<section id="hero">
-  <div class="watermark-bg watermark-left-vert" style="opacity: 0.02;">INITIALIZING</div>
-  <div class="bg-graphic vert-data" style="right: 2%; top: 20%; height: 60%;">SYS.INIT // SEQ: 48A9-FX // BIO-OP ACTIVE // 99.9%</div>
-  <div class="bg-graphic tech-accents" style="left: 5%; bottom: 10%;">+ + +<br>+ + +</div>
-
-  <div class="hero-bg-stripe"></div>
-  <div class="hero-bg-stripe-2"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow"><span>// PROFILE LOADED //</span></div>
-    <h1 class="hero-name">
-      <span class="hero-name-line glitch-hover" id="hn1" data-text="SAUMYAJEET">SAUMYAJEET</span><br>
-      <span class="hero-name-line glitch-hover" id="hn2" data-text="CHOUDHURY">CHOUDHURY</span>
-    </h1>
-    <p class="hero-title"><span id="ht1">M.Sc. Applied Microbiology · KIIT Deemed University</span></p>
-    <p class="hero-tagline"><span id="ht2">Engineering Tomorrow's Cures, One Culture at a Time.</span></p>
-    <div class="hero-boot"><span id="bootText"></span><span class="cursor-blink" id="bootCursor"></span></div>
-    <div class="hero-links" id="hlinks">
-      <button class="btn btn-primary" onclick="window.open('https://mail.google.com/mail/?view=cm&to=saumyajeetchoudhury@gmail.com','_blank')">✉ EMAIL</button>
-      <a href="https://linkedin.com/in/saumyajeet-choudhury" target="_blank" class="btn btn-outline">in LINKEDIN</a>
-      <span class="btn btn-outline" style="cursor:default">📍 BHUBANESWAR</span>
-    </div>
-  </div>
-  <div class="hero-scroll-hint"><span>SCROLL</span><div class="scroll-arrow"></div></div>
-</section>
-
-<!-- Scrolling Marquee Tape -->
-<div class="marquee-container">
-  <div class="marquee-content">
-    <span>// ANTIMICROBIAL RESISTANCE //</span><span>MOLECULAR BIOLOGY</span>
-    <span>// FOOD SAFETY PROTOCOLS //</span><span>ISO 13485 COMPLIANT</span>
-    <span>// ASEPTIC TECHNIQUES //</span><span>// ANTIMICROBIAL RESISTANCE //</span>
-    <span>MOLECULAR BIOLOGY</span><span>// FOOD SAFETY PROTOCOLS //</span>
-    <span>ISO 13485 COMPLIANT</span><span>// ASEPTIC TECHNIQUES //</span>
-  </div>
-</div>
-
-<section id="about" class="reveal-fade">
-  <div class="watermark-bg watermark-center">BIO-OP</div>
-  <div class="bg-graphic vert-data" style="left: 2%; top: 10%; height: 80%;">DATA.STREAM // 0x88A // ANALYSIS.MODE</div>
-
-  <div class="container">
-    <div class="section-label">01</div>
-    <h2 class="section-title target-bracket">CHARACTER<br>PROFILE</h2>
-    <div class="stat-sheet">
-      <div class="stat-bio">
-        <p>Applied Microbiology postgraduate with hands-on lab experience in food microbiology, antimicrobial resistance testing, and molecular biology. Proficient in aseptic techniques, microbial identification, QC documentation, and biosafety protocols. Focused on antimicrobial resistance and food safety research.</p>
+Example replacement:
+<div style='margin-top:1.5rem; padding: 1.5rem; border: 1px dashed var(--red); background: rgba(232,0,28,0.05);'>
+  <div style='color:var(--red); font-family:var(--font-mono); font-size:0.8rem; margin-bottom: 0.5rem;'>// CURRENTLY SEEKING: DISSERTATION PLACEMENT</div>
+  <p style='font-size:0.95rem;'>Actively hunting for roles and research opportunities focused on <strong>Antimicrobial Resistance</strong>, <strong>Food Safety</strong>, and <strong>Clinical Microbiology</strong>.</p>
+</div>" type="suggestion">
       </div>
-      <div class="stat-grid">
+      <comment-tag id="2"><div class="stat-grid">
         <div class="stat-row"><span class="stat-name">LAB SKILL</span><div class="stat-bar-wrap"><div class="stat-bar" data-val="88"></div></div><span class="stat-val">88</span></div>
         <div class="stat-row"><span class="stat-name">RESEARCH</span><div class="stat-bar-wrap"><div class="stat-bar" data-val="82"></div></div><span class="stat-val">82</span></div>
         <div class="stat-row"><span class="stat-name">AMR</span><div class="stat-bar-wrap"><div class="stat-bar" data-val="90"></div></div><span class="stat-val">90</span></div>
         <div class="stat-row"><span class="stat-name">MOLECULAR</span><div class="stat-bar-wrap"><div class="stat-bar" data-val="78"></div></div><span class="stat-val">78</span></div>
         <div class="stat-row"><span class="stat-name">QC / DOCS</span><div class="stat-bar-wrap"><div class="stat-bar" data-val="85"></div></div><span class="stat-val">85</span></div>
         <div class="stat-row"><span class="stat-name">FOOD SAFETY</span><div class="stat-bar-wrap"><div class="stat-bar" data-val="86"></div></div><span class="stat-val">86</span></div>
-      </div>
+      </div></comment-tag id="2" text="Remove these percentage bars. As you noted, unfalsifiable numbers can read as gimmicky to a technical reviewer. Replace this entire grid with the tag-chip format you've used below.
+
+Example replacement:
+<div class='stat-grid' style='justify-content: center; align-items: flex-start;'>
+  <div style='color:var(--red); font-family:var(--font-mono); font-size:0.8rem; margin-bottom:1rem;'>// CORE COMPETENCIES</div>
+  <div class='skill-chips'>
+    <span class='chip'>Lab Skills</span>
+    <span class='chip'>Research Methodologies</span>
+    <span class='chip'>AMR Testing</span>
+    <span class='chip'>Molecular Diagnostics</span>
+    <span class='chip'>QC / Documentation</span>
+    <span class='chip'>Food Safety Protocols</span>
+  </div>
+</div>" type="suggestion">
     </div>
   </div>
 </section>
 
 <div class="divider" style="background:#0d0d0d"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><polygon points="0,80 1440,0 1440,80 0,80" fill="#0a0a0a"/></svg></div>
 
-<section id="education" class="reveal-fade">
+<comment-tag id="3"><section id="education" class="reveal-fade">
   <div class="container">
     <div class="section-label">02</div>
-    <h2 class="section-title target-bracket">MISSION<br>LOG</h2>
+    <h2 class="section-title target-bracket">MISSION<br>LOG</h2></comment-tag id="3" text="To truly make the Internship dossier the standout section and fix the visual hierarchy, consider moving the entire `<section id='internships'>` block up in your HTML so it appears immediately after 'About' (becoming section '02') and right before Education. Moving work experience to the top is standard practice for signaling you are job-ready." type="suggestion">
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
@@ -492,8 +290,13 @@
   <div class="container">
     <div class="section-label">03</div>
     <h2 class="section-title target-bracket">ACHIEVEMENTS<br>UNLOCKED</h2>
-    <div class="achievement-grid">
-      <div class="achievement-card">
+    <comment-tag id="4"><div class="achievement-grid">
+      <div class="achievement-card"></comment-tag id="4" text="To shrink the Coursera achievements so they read as supplementary (as requested for visual hierarchy), modify the CSS classes applied here. 
+
+In your `<style>` block:
+- Change padding in `.achievement-card` from `2rem` to `1rem` or `1.5rem`.
+- Reduce `.ach-icon` size from `2.5rem` to `1.5rem`.
+- Reduce `.ach-title` font-size from `1.2rem` to `0.95rem` or `1rem`." type="suggestion">
         <div class="ach-icon">🏆</div>
         <div class="ach-title">ANTIMICROBIAL RESISTANCE: THEORY AND METHODS</div>
         <div class="ach-issuer">DTU · Coursera</div><div class="ach-date">// AUG 2025</div><div class="ach-badge">UNLOCKED</div>
@@ -561,10 +364,16 @@
         <div class="dossier-period">May – Jul 2026</div>
       </div>
       <ul class="dossier-bullets">
-        <li>Performed serological assays for diagnostic screening of clinical specimens under laboratory supervision.</li>
+        <comment-tag id="5"><li>Performed serological assays for diagnostic screening of clinical specimens under laboratory supervision.</li>
         <li>Prepared plate cultures and smears from patient samples for microscopic and culture-based identification.</li>
         <li>Carried out Gram and other staining procedures to support organism identification and reporting.</li>
-        <li>Prepared and sterilised microbiological culture media for routine diagnostic workflows, following hospital SOPs and biosafety protocols.</li>
+        <li>Prepared and sterilised microbiological culture media for routine diagnostic workflows, following hospital SOPs and biosafety protocols.</li></comment-tag id="5" text="Quantify these bullets to demonstrate scale, efficiency, and real-world impact rather than just listing duties. 
+
+Examples of how to rewrite these:
+- 'Processed 50+ clinical specimens daily using serological assays for rapid diagnostic screening.'
+- 'Prepared and analyzed over 200 plate cultures and smears weekly, significantly reducing diagnostic backlog.'
+- 'Maintained a strict 24-hour turnaround time for Gram and acid-fast staining procedures, aiding in swift organism reporting.'
+- 'Formulated and sterilized 10L+ of microbiological culture media weekly, ensuring 100% compliance with hospital SOPs and ISO biosafety protocols.'" type="suggestion">
       </ul>
     </div>
   </div>
@@ -619,15 +428,16 @@
           <div class="calling-title">SAUMYAJEET<br>CHOUDHURY</div>
           <div class="calling-info">
             <a href="mailto:saumyajeetchoudhury@gmail.com" class="calling-item"><span class="calling-item-icon">✉</span>saumyajeetchoudhury@gmail.com</a>
-            <a href="https://linkedin.com/in/saumyajeet-choudhury" target="_blank" class="calling-item"><span class="calling-item-icon">in</span>linkedin.com/in/saumyajeet-choudhury</a>
+            <a href="https://linkedin.com/in/saumyajeet-choudhury" target="_blank" rel="noopener noreferrer" class="calling-item"><span class="calling-item-icon">in</span>linkedin.com/in/saumyajeet-choudhury</a>
             <span class="calling-item"><span class="calling-item-icon">📍</span>Bhubaneswar, Odisha, India</span>
           </div>
         </div>
       </div>
       <div class="contact-form">
-        <div class="form-group"><label for="cf-name">CODENAME</label><input type="text" id="cf-name" placeholder="Your name"></div>
-        <div class="form-group"><label for="cf-email">TRANSMISSION CHANNEL</label><input type="email" id="cf-email" placeholder="your@email.com"></div>
-        <div class="form-group"><label for="cf-msg">MESSAGE CONTENT</label><textarea id="cf-msg" placeholder="State your intentions..."></textarea></div>
+        <div class="form-group"><label for="cf-name">CODENAME</label><input type="text" id="cf-name" placeholder="Your name" required></div>
+        <div class="form-group"><label for="cf-email">TRANSMISSION CHANNEL</label><input type="email" id="cf-email" placeholder="your@email.com" required></div>
+        <div class="form-group"><label for="cf-msg">MESSAGE CONTENT</label><textarea id="cf-msg" placeholder="State your intentions..." required></textarea></div>
+        <input type="text" id="cf-hp" name="_gotcha" style="position:absolute; left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="form-submit" onclick="handleSubmit(event)">SEND CARD</button>
       </div>
     </div>
@@ -836,11 +646,13 @@ document.querySelectorAll('.quest-card').forEach((el, i) => { el.style.transitio
 async function handleSubmit(e) {
   e.preventDefault();
   const name = document.getElementById('cf-name').value.trim(), email = document.getElementById('cf-email').value.trim(), msg = document.getElementById('cf-msg').value.trim();
+  const honeypot = document.getElementById('cf-hp').value;
+  if (honeypot) { return; }
   if (!name || !email || !msg) { flashScreen(); return; }
   const btn = document.querySelector('.form-submit');
   btn.textContent = 'TRANSMITTING...'; btn.disabled = true;
   try {
-    const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify({ name, email, message: msg }) });
+    const res = await fetch('https://formspree.io/f/xvkgbywo', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify({ name, email, message: msg, _gotcha: honeypot }) });
     if (res.ok) {
       btn.textContent = '// CARD SENT //'; btn.style.background = 'rgba(0,200,100,0.2)'; btn.style.borderColor = 'rgba(0,200,100,0.6)'; btn.style.color = 'rgba(0,200,100,0.9)';
       document.getElementById('cf-name').value = ''; document.getElementById('cf-email').value = ''; document.getElementById('cf-msg').value = '';
